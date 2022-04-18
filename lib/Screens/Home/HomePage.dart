@@ -5,7 +5,7 @@ import 'package:helapy_ios/main.dart';
 class HomePage extends StatefulWidget {
   static String routeName = "/home";
 
-  const HomePage({Key key});
+
 
   @override
   State<HomePage> createState() => _HomePageState();

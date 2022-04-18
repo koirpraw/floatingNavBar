@@ -24,6 +24,13 @@ class HelapyIosTheme {
 
   String primaryFontFamily = 'Poppins';
   String secondaryFontFamily = 'Roboto';
+
+  static TextStyle get headline3 => GoogleFonts.getFont(
+    'Lato',
+    color: primaryDark,
+    fontWeight: FontWeight.w600,
+    fontSize: 32,
+  );
   static TextStyle get title1 => GoogleFonts.getFont(
         'Lato',
         color: highEmphasis,
@@ -70,11 +77,11 @@ class HelapyIosTheme {
 
 extension TextStyleHelper on TextStyle {
   TextStyle override({
-    String fontFamily,
-    Color color,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
+    required String fontFamily,
+    required Color color,
+    required double fontSize,
+    required FontWeight fontWeight,
+    required FontStyle fontStyle,
     bool useGoogleFonts = true,
   }) =>
       useGoogleFonts

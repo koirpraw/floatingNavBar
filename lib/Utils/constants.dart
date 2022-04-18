@@ -19,14 +19,14 @@ final kTitle =  HelapyIosTheme.subtitle1
   fontFamily: 'Lexend Deca',
   color: Color(0xFF151B1E),
   fontSize: 18,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.w500, fontStyle: FontStyle.normal,
 );
 
 final kSubtitle = HelapyIosTheme.bodyText2.override(
 fontFamily: 'Lexend Deca',
 color: Color(0xFF8B97A2),
 fontSize: 14,
-fontWeight: FontWeight.normal);
+fontWeight: FontWeight.normal, fontStyle: FontStyle.normal);
 
 const kBackgroundColor = Color(0xFFF5F5F5);
 

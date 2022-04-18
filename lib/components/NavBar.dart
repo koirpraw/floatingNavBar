@@ -9,7 +9,7 @@ import 'package:helapy_ios/provider/theme_provider.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class NavBarPage extends StatefulWidget {
-  NavBarPage({ this.initialPage});
+  NavBarPage({ required this.initialPage});
 
   final String initialPage;
   static String routeName = "/NavBarPage";

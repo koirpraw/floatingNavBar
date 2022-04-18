@@ -14,14 +14,14 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../main.dart';
 
 class OnboardingPages extends StatefulWidget {
-  const OnboardingPages({Key key}) : super(key: key);
+
 
   @override
   _OnboardingPagesState createState() => _OnboardingPagesState();
 }
 
 class _OnboardingPagesState extends State<OnboardingPages> {
-  PageController pageViewController;
+  PageController? pageViewController;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -139,7 +139,7 @@ class _OnboardingPagesState extends State<OnboardingPages> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (BuildContext context) =>
-                                              NavBarPage()));
+                                              NavBarPage(initialPage: '',)));
                                 },
                                 child: Text(
                                   "LETS GO !",
@@ -160,7 +160,7 @@ class _OnboardingPagesState extends State<OnboardingPages> {
                           count: 5,
                           axisDirection: Axis.horizontal,
                           onDotClicked: (i) {
-                            pageViewController.animateToPage(
+                            pageViewController?.animateToPage(
                               i,
                               duration: Duration(milliseconds: 500),
                               curve: Curves.ease,

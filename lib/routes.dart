@@ -7,5 +7,5 @@ import 'components/NavBar.dart';
 final Map<String, WidgetBuilder> routes = {
   SignInScreen.routeName: (context) => SignInScreen(),
   HomePage.routeName: (context) => HomePage(),
-  NavBarPage.routeName:(context) => NavBarPage(),
+  NavBarPage.routeName:(context) => NavBarPage(initialPage: '',),
 };

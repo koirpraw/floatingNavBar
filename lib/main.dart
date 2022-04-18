@@ -27,7 +27,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 class MyApp extends StatelessWidget {
   static const String title = "Helapy";
-  const MyApp({Key key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(

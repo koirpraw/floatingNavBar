@@ -5,10 +5,9 @@ import 'package:helapy_ios/size_config.dart';
 
 class SocalCard extends StatelessWidget {
   const SocalCard({
-    Key key,
-    this.icon,
-    this.press,
-  }) : super(key: key);
+    required this.icon,
+    required this.press,
+  });
 
   final String icon;
   final Function press;

@@ -5,7 +5,7 @@ import 'package:helapy_ios/Theme_Helapy_Ios.dart';
 import 'package:helapy_ios/components/ChangeTheme_sliderButton.dart';
 
 class MorePage extends StatelessWidget {
-  const MorePage({Key key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {

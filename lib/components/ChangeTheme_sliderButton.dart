@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:helapy_ios/provider/theme_provider.dart';
 
 class ChangeThemeButtonWidget extends StatelessWidget {
-  const ChangeThemeButtonWidget({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

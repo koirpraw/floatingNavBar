@@ -5,9 +5,8 @@ import '../size_config.dart';
 
 class CustomSurffixIcon extends StatelessWidget {
   const CustomSurffixIcon({
-    Key key,
-    this.svgIcon,
-  }) : super(key: key);
+    required this.svgIcon,
+  });
 
   final String svgIcon;
 

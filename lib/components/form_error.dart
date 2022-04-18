@@ -5,9 +5,8 @@ import '../size_config.dart';
 
 class FormError extends StatelessWidget {
   const FormError({
-    Key key,
-     this.errors,
-  }) : super(key: key);
+    required this.errors,
+  });
 
   final List<String> errors;
 
@@ -19,7 +18,7 @@ class FormError extends StatelessWidget {
     );
   }
 
-  Row formErrorText({ String error}) {
+  Row formErrorText({required String error}) {
     return Row(
       children: [
         SvgPicture.asset(

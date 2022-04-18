@@ -4,8 +4,8 @@ import 'package:lottie/lottie.dart';
 
 class OnBoardingPageConatiner extends StatelessWidget {
   const OnBoardingPageConatiner({
-    this.headerText,
-    this.networkImage,
+    required this.headerText,
+    required this.networkImage,
   });
 
   final Text headerText;
