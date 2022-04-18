@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:helapy_ios/Screens/onBoarding/onBoardingPages.dart';
 import 'package:helapy_ios/Theme_Helapy_Ios.dart';
+import 'package:helapy_ios/components/ChangeTheme_sliderButton.dart';
 
 class MorePage extends StatelessWidget {
   const MorePage({Key key}) : super(key: key);
@@ -13,36 +14,67 @@ class MorePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: 400,
-            width: 400,
+            height: 200,
+            width: 200,
             child: Center(child: Text('MorePage')),
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.8,
+                height: 60,
+                child: Card(
+                    elevation: 3,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("Change Theme:"),
+                        ChangeThemeButtonWidget(),
+                      ],
+                    )),
+              ),
+            ],
+          ),
           SizedBox(
-            height: 40,
-            width: 160,
-            child: ElevatedButton(
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.white),
-                  elevation: MaterialStateProperty.all(3),
-                ),
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>OnboardingPages()))
-
-                //
-                ,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Icon(
-                      Icons.login_rounded,
-                      color: Colors.red,
+            height: 64,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width *0.4,
+                height: 40,
+                child: OutlinedButton(
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.green),
+                      // elevation: MaterialStateProperty.all(3),
                     ),
-                    Text(
-                      "Log Out",
-                      style: TextStyle(color: Colors.black54),
-                    )
-                  ],
-                )),
-          )
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => OnboardingPages()))
+
+                    //
+                    ,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.login_rounded,
+                          color: Theme.of(context).colorScheme.secondary,
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "Log Out",style: TextStyle(color: Theme.of(context).colorScheme.secondary),
+                        )
+                      ],
+                    )),
+              ),
+            ],
+          ),
         ],
       ),
     );
