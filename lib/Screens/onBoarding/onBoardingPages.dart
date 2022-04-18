@@ -47,6 +47,23 @@ class _OnboardingPagesState extends State<OnboardingPages> {
                             PageController(initialPage: 0),
                         scrollDirection: Axis.horizontal,
                         children: [
+                          Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Relax...", style: TextStyle(fontWeight: FontWeight.w500,fontSize: 30),),
+                                Container(
+                                  height:
+                                  MediaQuery.of(context).size.height * 0.6,
+                                  width:
+                                  MediaQuery.of(context).size.width * 0.8,
+                                  child: Lottie.asset(
+                                    'assets/lottiefiles/meditating-monkey.json',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                                Text("U made it .",style: TextStyle(fontSize: 16),),
+                                Text("Now Let us take care of you",style: TextStyle(fontSize: 16),),
+                              ]),
                           OnBoardingPageConatiner(
                             headerText: Text(
                               "Description Text 1",
@@ -86,20 +103,6 @@ class _OnboardingPagesState extends State<OnboardingPages> {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.6,
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.8,
-                                  child: Lottie.asset(
-                                    'assets/lottiefiles/meditating-monkey.json',
-                                    fit: BoxFit.fill,
-                                  ),
-                                )
-                              ]),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -150,7 +153,7 @@ class _OnboardingPagesState extends State<OnboardingPages> {
                       ),
                       //This is the animated slide indicator at the bottom
                       Align(
-                        alignment: AlignmentDirectional(0, .8),
+                        alignment: AlignmentDirectional(0, .9),
                         child: SmoothPageIndicator(
                           controller: pageViewController ??=
                               PageController(initialPage: 0),

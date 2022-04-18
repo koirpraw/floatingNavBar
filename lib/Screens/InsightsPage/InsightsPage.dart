@@ -6,11 +6,9 @@ class InsightsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: 400,
-        width: 400,
-        child: Center(child: Text('InsightsPage')),
-      ),
-    );
+      body:
+        Center(child: Text('InsightsPage')),
+      );
+
   }
 }
