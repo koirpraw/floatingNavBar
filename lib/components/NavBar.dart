@@ -6,10 +6,10 @@ import 'package:helapy_ios/Screens/MorePage/MorePage.dart';
 import 'package:helapy_ios/Screens/VisualData/VisualData.dart';
 import '../Theme_Helapy_Ios.dart';
 import 'package:helapy_ios/provider/theme_provider.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+// import 'package:flutter_icons/flutter_icons.dart';
 
 class NavBarPage extends StatefulWidget {
-  NavBarPage({ required this.initialPage});
+  NavBarPage({  required this.initialPage});
 
   final String initialPage;
   static String routeName = "/NavBarPage";
@@ -22,15 +22,17 @@ class NavBarPage extends StatefulWidget {
 
 class _NavBarPageState extends State<NavBarPage> {
   String _currentPage = 'Homepage';
-  final int _currentIndex = 0;
+  final int currentIndex = 0;
 
 
-  @override
-  void initState() {
-    super.initState();
-    _currentPage = widget.initialPage ?? _currentPage;
-    // _currentPage = widget.initialPage ?? _currentPage;
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _currentPage = widget.initialPage ;
+  //   // _currentPage = widget.initialPage ?? _currentPage;
+  // }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -68,10 +70,10 @@ class _NavBarPageState extends State<NavBarPage> {
 
 
             items: [
-              CustomNavigationBarItem(icon: Icon(AntDesign.home)),
-              CustomNavigationBarItem(icon: Icon(AntDesign.barchart)),
-              CustomNavigationBarItem(icon: Icon(AntDesign.cloudo)),
-              CustomNavigationBarItem(icon: Icon(AntDesign.user))
+              CustomNavigationBarItem(icon: Icon(Icons.home)),
+              CustomNavigationBarItem(icon: Icon(Icons.bar_chart)),
+              CustomNavigationBarItem(icon: Icon(Icons.cloud_outlined)),
+              CustomNavigationBarItem(icon: Icon(Icons.person))
             ],
             currentIndex: tabs.keys.toList().indexOf(_currentPage),
 

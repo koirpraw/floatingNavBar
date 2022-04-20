@@ -87,10 +87,10 @@ extension TextStyleHelper on TextStyle {
       useGoogleFonts
           ? GoogleFonts.getFont(
               fontFamily,
-              color: color ?? this.color,
-              fontSize: fontSize ?? this.fontSize,
-              fontWeight: fontWeight ?? this.fontWeight,
-              fontStyle: fontStyle ?? this.fontStyle,
+              color: color,
+              fontSize: fontSize,
+              fontWeight: fontWeight,
+              fontStyle: fontStyle,
             )
           : copyWith(
               fontFamily: fontFamily,

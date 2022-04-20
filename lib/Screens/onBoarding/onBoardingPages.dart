@@ -139,7 +139,7 @@ class _OnboardingPagesState extends State<OnboardingPages> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (BuildContext context) =>
-                                              NavBarPage(initialPage: '',)));
+                                              NavBarPage(initialPage: 'HomePage')));
                                 },
                                 child: Text(
                                   "LETS GO !",

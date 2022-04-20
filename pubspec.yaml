@@ -30,7 +30,7 @@ dependencies:
   custom_navigation_bar: ^0.8.2
   smooth_page_indicator: ^1.0.0+2
   provider: ^6.0.2
-  flutter_icons: ^1.1.0
+#  flutter_icons: ^1.1.0
   firebase_core: ^1.13.1
   firebase_auth: ^3.3.11
   get: ^4.6.1
@@ -53,6 +53,7 @@ flutter:
   assets:
    - assets/lottiefiles/kadokado-heart.json
    - assets/lottiefiles/meditating-monkey.json
+   - assets/HelapyAppIcon.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
